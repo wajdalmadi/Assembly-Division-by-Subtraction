@@ -1,0 +1,52 @@
+﻿/Wajd Almadi 		172834
+/Samira Aldamen 	170587
+		  Input 
+          Store x       
+	
+          Input
+          Store y
+	
+          Load z
+          Store temp
+	
+          Load z
+          Store counter
+Multiply, Load counter
+          Subt ten
+          Skipcond 000
+          Jump MultiplyEnd
+          Load x
+          Add xx
+          Store xx
+          Load counter
+          Add ad
+          Store counter
+          Jump Multiply
+
+MultiplyEnd, Load xx
+
+Loop,     Load xx
+          Subt y
+          Skipcond 000
+          Jump One
+          Jump Display
+
+One,      Store xx
+          Load temp
+          Add ad
+          Store temp
+          Jump Loop
+
+Display,  Load temp
+          Output
+
+          Halt
+
+x,         Dec 0
+y,         Dec 0
+z,         Dec 0
+ad,        Dec 1
+temp,      Dec 0
+xx,        Dec 0
+ten,       Dec 10
+counter,   Dec 0
